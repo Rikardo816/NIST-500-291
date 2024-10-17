@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing</title>
+    <link rel="stylesheet" href="cloud_computing.css">
+</head>
+<body>
+    <h1>CLOUD COMPUTING STANDARDS FOR INTEROPERABILITY AND PORTABILITY</h1>
+
+    <p>
+        Cloud platforms should enable the secure and efficient transfer of data among providers and facilitate 
+        the portability of applications across different platforms. Data may be transient or persistent, structured or unstructured, 
+        and can be stored in file systems, caches, relational, or non-relational databases. <strong>Cloud interoperability</strong> 
+        allows data to be processed by different services across various systems through common specifications, facilitating the 
+        exchange and use of data and services among cloud infrastructure offerings. <strong>Cloud portability</strong> ensures that 
+        data and applications can be moved from one system to another at acceptable costs, preserving existing technology investments 
+        and allowing for the coexistence of on-premises software and cloud services. The migration process to the cloud should optimize 
+        consumer experience by ensuring seamless access between multiple platforms. For example, a financial application might utilize 
+        large volumes of data housed in a single database, while a customer relationship management (CRM) application sharing data among 
+        many users may face greater challenges when moved. Overall, the functionality of cloud interoperability is preferred.
+    </p>
+    
+    
+    <h2>6.4.1 CLOUD STANDARDS FOR INTEROPERABILITY</h2>
+
+    <p>
+        Interoperability can be assessed using the NIST Cloud Computing Reference Architecture at the IaaS, PaaS, and SaaS levels, 
+        each presenting unique standards considerations. At the IaaS level, two key standard sets are applicable: the Open Cloud 
+        Computing Interface (OCCI) and the Cloud Infrastructure Management Interface (CIMI). OCCI, published in 2011, offers a general 
+        protocol for RESTful control of infrastructure, while CIMI, developed in 2012, provides a tightly defined calling sequence 
+        aligned with DMTF's Common Information Model. In PaaS, a diverse ecosystem of non-interchangeable vendor-specific products exists, 
+        with efforts by the OASIS CAMP committee to create a PaaS-specific standard. For SaaS applications accessed via web browsers, 
+        various non-cloud-specific standards like HTTP, SSL/TLS, and REST are used to ensure interoperability. Additionally, standards 
+        such as SOAP, WS-*, OpenID, and CDMI facilitate interoperability between cloud services, with canonical data content formats—often 
+        XML-based—being crucial for effective data exchange. As the SaaS landscape is expansive, it is likely that cloud-based products will 
+        adopt a range of Internet protocols, while standardization efforts, such as DFDL and CDMI, may be vital for achieving interoperability. 
+        NIST will test and analyze some interfaces to validate their capabilities against cloud computing use cases.
+    </p>
+
+    <h2>6.4.2 CLOUD COMPUTING STANDARDS FOR PORTABILITY</h2>
+
+    <p>
+        Significant progress has been made in cloud standards, such as the Open Virtualization Format (OVF) by the DMTF, which addresses 
+        virtualization platform portability. OVF contains metadata about virtual machine images, specifying details like CPU, memory, network 
+        configurations, and digital signatures for integrity checks. It also includes machine-readable EULAs. At higher levels of abstraction, 
+        standards like OASIS’s Topology and Orchestration Services for Applications (TOSCA) address portability between cloud providers, enabling 
+        the deployment and lifecycle management of applications across platforms. TOSCA allows for operations like deploy, patch, and shutdown 
+        in a platform-independent manner. Further standardization efforts aim to automate inter-cloud workload deployment and standardize SLAs, 
+        network configuration, and software licensing. Data portability, particularly between cloud storage services, requires standardized formats 
+        for both data and metadata, with popular formats including JSON and XML. Standards facilitate the portability of applications across platforms,
+         helping developers use familiar programming languages like Java, C#, and Python, while leveraging protocols like REST and SOAP for service access.
+          As cloud standards like OVF mature and evolve, providers must ensure transparency by citing specific versions, implementation notes, and errata
+           for conformance. This transparency helps guarantee technical interoperability between on-premises and cloud systems.
+    </p>
+    
+    <h2>6.4.3 SUMMARY ON INTEROPERABILITY AND PORTABILITY</h2>
+
+    <p>
+        Significant progress has been made by Standards Development Organizations (SDOs) in creating standards for cloud computing requirements and use cases. While there are existing standards that facilitate cloud service interoperability and data portability, gaps remain, particularly in the PaaS area, and ongoing development efforts require further maturation. As cloud standards continue to evolve, they must clearly outline how services interoperate and how data can be easily ported between different cloud offerings. Furthermore, as cloud and IT standards evolve, governance and orchestration issues in cloud architectures will become more pronounced, necessitating updates to governance models. Governance in the cloud parallels that of the Internet, focusing on standardizing data and service sharing rather than data packets. The demand for seamless and efficient access to data and services across cloud providers will drive the need for standards that define how services and data can interoperate or be ported. The SAJACC group has begun analyzing input from various SDOs and federal agencies on this topic, including service agreements and SLAs, as further discussed in Section 6.6, “Cloud Standards for Performance.”
+    </p>    
+    
+    <a href="../index.html">Volver al índice principal</a>
+</body>
+</html>
