@@ -63,3 +63,20 @@ a:hover {
         padding: 10px;
     }
 }
+
+/* Estilo para imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px; /* Bordes redondeados para un aspecto suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto hover para imágenes */
+img:hover {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el cursor */
+}
