@@ -11,7 +11,8 @@
         <h1>NIST Cloud Computing Standards Roadmap</h1>
     </header>
 
-    <nav class="navbar">
+    <div class="navbar">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
         <ul>
             <li><a href="#section-6.1">6.1 Life Cycle</a></li>
             <li><a href="#section-6.2">6.2 Conformity Assessment</a></li>
@@ -21,11 +22,11 @@
             <li><a href="#section-6.6">6.6 Performance</a></li>
             <li><a href="#section-6.7">6.7 Accessibility</a></li>
         </ul>
-    </nav>
+    </div>
 
     
     <div class="container">
-        <h2 id="section-6.1">6.1 Information and Communication Technologies (IT) Standards Life Cycle</h2>
+        <h2 id="section-6.1"><a href="6.1/standars_life_cycle.html">6.1 Information and Communication Technologies (IT) Standards Life Cycle</a></h2>
         <h2 id="section-6.2"><a href="6.2/conformity_assessment.html">6.2 The Role of Conformity Assessment to Standards</a></h2>
         <ul>
             <li>6.2.1 Conformity Assessment Activities</li>
@@ -41,12 +42,18 @@
             <li>6.4.3 Summary on Interoperability and Portability</li>
         </ul>
         <h2 id="section-6.5"><a href="6.5/cloud_standars_for_security.html">6.5 Cloud Computing Standards for Security</a></h2>
-        <h2 id="section-6.6">6.6 Cloud Computing Standards for Performance</h2>
+        <h2 id="section-6.6"><a href="6.6/Standards_for_Performance.html">6.6 Cloud Computing Standards for Performance</a></h2>
         <ul>
             <li>6.6.1 Cloud Standards for Service Agreements</li>
             <li>6.6.2 Cloud Standards for Monitoring</li>
         </ul>
         <h2><a href="6.7/standards_accessibility.html">6.7 Cloud Computing Standards for Accessibility</a></h2>
     </div>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

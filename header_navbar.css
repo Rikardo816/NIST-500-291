@@ -37,6 +37,25 @@
     color: #f4f4f9;
 }
 
+/* Botón de menú hamburguesa (para pantallas pequeñas) */
+.navbar .menu-icon {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar.active ul {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Estilo para el encabezado principal */
 header {
     text-align: center;
@@ -53,27 +72,38 @@ header h1 {
 }
 
 header h1 a {
-    color: white; /* Mantiene el enlace blanco para que se integre con el header */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    transition: color 0.3s; /* Añade una transición suave al cambiar el color */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 header h1 a:hover {
-    color: #e0e0e0; /* Cambia el color del enlace a un tono más claro al pasar el cursor */
+    color: #e0e0e0;
 }
 
-/* Estilo responsivo para la barra de navegación y el header */
+/* Estilo responsivo */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .navbar ul {
-        flex-direction: column;
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        text-align: center;
     }
 
     .navbar a {
         text-align: center;
         padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
     }
 }
