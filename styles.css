@@ -56,6 +56,25 @@ body {
     color: #f4f4f9;
 }
 
+/* Botón de menú hamburguesa (para pantallas pequeñas) */
+.navbar .menu-icon {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar.active ul {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Estilo para el encabezado principal */
 header {
     text-align: center;
@@ -70,6 +89,44 @@ header h1 {
     font-size: 3em;
     font-weight: 700;
 }
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header h1 a:hover {
+    color: #e0e0e0;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
 
 /* Estilo para los encabezados de secciones */
 h2 {
