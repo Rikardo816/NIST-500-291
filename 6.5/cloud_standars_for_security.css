@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding-top: 80px; /* Espacio para la barra de navegación */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los encabezados de secciones */
+h2 {
+    color: #2c3e50;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Listas dentro de secciones */
+ul {
+    margin: 10px 20px 20px;
+    padding: 15px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para enlaces dentro del contenido */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    ul {
+        padding: 10px;
+    }
+}
+
+/* Estilo para imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+    border-radius: 8px; /* Bordes redondeados para un aspecto suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto hover para imágenes */
+img:hover {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el cursor */
+}
